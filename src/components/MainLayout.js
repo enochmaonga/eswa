@@ -44,7 +44,8 @@ function MainLayout({ children }) {
           <Tab label="Login" component={Link} href="/login" />
           <Tab label="Loans" component={Link} href="/loans" />
           <Tab label="Account" component={Link} href="/account" />
-          <Tab label="Repay" component={Link} href="/repayment" />
+          <Tab label="Repayment" component={Link} href="/repayment" />
+          <Tab label="Sfs" component={Link} href="/sfs" />
         </Tabs>
         <Avatar
             alt={user.name}
@@ -53,7 +54,7 @@ function MainLayout({ children }) {
           />
         </Toolbar>
       </AppBar>
-      <Container>{children}</Container>
+      {children}
       <footer>
         <p>&copy; {new Date().getFullYear()} Eswa</p>
       </footer>
